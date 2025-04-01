@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virágok & Koszorúk - Kézműves Szépségek</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- === Hivatkozás a különálló CSS fájlra === -->
     <link rel="stylesheet" href="style.css">
-    <!-- === Google Fonts === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -27,6 +25,7 @@
             <nav>
                 <ul>
                     <li><a href="#hero">Kezdőlap</a></li>
+                    <li><a href="#viragok">Virágok</a></li>
                     <li><a href="#flowers">Virágcsokrok</a></li>
                     <li><a href="#wreaths">Koszorúk</a></li>
                     <li><a href="#coming-soon">Újdonságok</a></li>
@@ -51,16 +50,31 @@
             <div class="section-divider" data-aos="zoom-in" data-aos-delay="100"></div>
             <div class="product-grid">
                  <div class="product-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="img-container"><img src="https://placehold.co/400x250/d987a0/FFF?text=Elegáns+Rózsacsokor" alt="Elegáns rózsacsokor placeholder"></div>
-                    <div class="card-content">
-                        <h3>Elegáns Rózsacsokor</h3>
-                        <p>Tökéletes választás évfordulóra vagy születésnapra.</p>
-                        <p class="product-price">Ár: 14 500 Ft</p>
-                        <a href="#order" class="button-small">Részletek/Rendelés</a>
-                    </div>
-                </div>
+                     <div class="img-container">
+                         <div class="slideshow-container">
+                             <div class="slide fade"><img src="https://placehold.co/400x250/d987a0/FFF?text=Rózsacsokor+1" alt="Elegáns rózsacsokor - 1. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/c76a89/FFF?text=Rózsacsokor+2" alt="Elegáns rózsacsokor - 2. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/e8a0b8/333?text=Rózsacsokor+3" alt="Elegáns rózsacsokor - 3. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                             <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                         </div>
+                     </div>
+                     <div class="card-content">
+                         <h3>Elegáns Rózsacsokor</h3>
+                         <p>Tökéletes választás évfordulóra vagy születésnapra.</p>
+                         <p class="product-price">Ár: 14 500 Ft</p>
+                         <a href="#order" class="button-small">Részletek/Rendelés</a>
+                     </div>
+                 </div>
                 <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                     <div class="img-container"><img src="https://placehold.co/400x250/8FBC8F/FFF?text=Tavaszi+Ajtókoszorú" alt="Tavaszi ajtókoszorú placeholder"></div>
+                    <div class="img-container">
+                        <div class="slideshow-container">
+                             <div class="slide fade"><img src="https://placehold.co/400x250/8FBC8F/FFF?text=Ajtókoszorú+1" alt="Tavaszi ajtókoszorú - 1. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/6B8E6B/FFF?text=Ajtókoszorú+2" alt="Tavaszi ajtókoszorú - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                             <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                         </div>
+                    </div>
                      <div class="card-content">
                          <h3>Tavaszi Ajtókoszorú</h3>
                          <p>Üdvözöld a tavaszt ezzel a vidám, kézműves koszorúval.</p>
@@ -69,14 +83,133 @@
                      </div>
                 </div>
                 <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="img-container"><img src="https://placehold.co/400x250/ffcc99/333?text=Színes+Mezei+Csokor" alt="Színes mezei csokor placeholder"></div>
+                     <div class="img-container">
+                        <div class="slideshow-container">
+                             <div class="slide fade"><img src="https://placehold.co/400x250/ffcc99/333?text=Mezei+Csokor+1" alt="Színes mezei csokor - 1. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/f4a460/333?text=Mezei+Csokor+2" alt="Színes mezei csokor - 2. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/e0af81/FFF?text=Mezei+Csokor+3" alt="Színes mezei csokor - 3. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                             <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                     <div class="card-content">
                         <h3>Színes Mezei Csokor</h3>
                         <p>Hozd el a természet frissességét otthonodba.</p>
-                        <p class="product-price">Ár: 11 200 Ft</p> 
+                        <p class="product-price">Ár: 11 200 Ft</p>
                         <a href="#order" class="button-small">Részletek/Rendelés</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="viragok" class="content-section">
+            <h2 data-aos="fade-up">Virágok</h2>
+             <div class="section-divider" data-aos="zoom-in" data-aos-delay="100"></div>
+            <p class="section-description" data-aos="fade-up" data-aos-delay="50">Állítsd össze saját, egyedi csokrodat, vagy válassz csak egyetlen szál szépséget.</p>
+            <div class="product-grid">
+                 <div class="product-card" data-aos="fade-up">
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="muskatli1.jpg" alt="Vörös rózsa - 1. nézet"></div>
+                            <div class="slide fade"><img src="muskatli2.jpg" alt="Vörös rózsa - 2. nézet"></div>
+                            <div class="slide fade"><img src="muskatli3.jpg" alt="Vörös rózsa - 3. nézet"></div>
+                            <div class="slide fade"><img src="muskatli4.jpg" alt="Vörös rózsa - 4. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Muskátli</h3>
+                        <p>Az örök klasszikus, a szerelem szimbóluma.</p>
+                        <p class="product-price">Ár: 1 000 Ft / db</p>
+                        <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                    </div>
+                </div>
+                 <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                     <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffd700/333?text=Tulipán+1" alt="Sárga tulipán - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffec8b/333?text=Tulipán+2" alt="Sárga tulipán - 2. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/e6be8a/FFF?text=Tulipán+3" alt="Sárga tulipán - 3. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sárga Tulipán</h3>
+                        <p>Vidámság és napsütés egy virágban.</p>
+                        <p class="product-price">Ár: 850 Ft / szál</p>
+                        <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                    </div>
+                </div>
+                 <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                     <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffffff/666?text=Liliom+1" alt="Fehér liliom - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/f0f0f0/333?text=Liliom+2" alt="Fehér liliom - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                     <div class="card-content">
+                         <h3>Fehér Liliom</h3>
+                         <p>Elegancia, tisztaság és illat.</p>
+                         <p class="product-price">Ár: 1 500 Ft / szál</p>
+                         <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                     </div>
+                </div>
+                <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/da70d6/FFF?text=Orchidea+1" alt="Orchidea - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ba55d3/FFF?text=Orchidea+2" alt="Orchidea - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Orchidea</h3>
+                        <p>Egzotikus szépség és kifinomultság.</p>
+                        <p class="product-price">Ár: 2 200 Ft / szál</p>
+                        <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                    </div>
+               </div>
+               <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
+                    <div class="img-container">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffc0cb/333?text=Szegfű+1" alt="Rózsaszín Szegfű - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffb6c1/333?text=Szegfű+2" alt="Rózsaszín Szegfű - 2. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/db7093/FFF?text=Szegfű+3" alt="Rózsaszín Szegfű - 3. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rózsaszín Szegfű</h3>
+                        <p>Kedvesség és hála kifejezése.</p>
+                        <p class="product-price">Ár: 700 Ft / szál</p>
+                        <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                    </div>
+                </div>
+                <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
+                    <div class="img-container">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/87ceeb/333?text=Írisz+1" alt="Kék Írisz - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/add8e6/333?text=Írisz+2" alt="Kék Írisz - 2. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kék Írisz</h3>
+                        <p>Remény és méltóság virága.</p>
+                        <p class="product-price">Ár: 950 Ft / szál</p>
+                        <a href="#order" class="button-small">Megnézem/Rendelés</a>
+                    </div>
+               </div>
+            </div>
+            <div class="load-more-container">
+                <button id="load-more-viragok" class="cta-button load-more-button" data-state="hidden">További virágok</button>
             </div>
         </section>
 
@@ -86,50 +219,94 @@
              <p class="section-description" data-aos="fade-up" data-aos-delay="50">Legyen szó romantikus gesztusról, születésnapról vagy csak egy kis hétköznapi örömről, nálunk megtalálod a tökéletes csokrot.</p>
             <div class="product-grid">
                  <div class="product-card" data-aos="fade-up">
-                     <div class="img-container"><img src="https://placehold.co/400x250/e6e6fa/333?text=Romantikus+Álom" alt="Virágcsokor 1 placeholder"></div>
+                      <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/e6e6fa/333?text=Romantikus+1" alt="Romantikus Álom Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/d8bfd8/333?text=Romantikus+2" alt="Romantikus Álom Csokor - 2. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Romantikus Álom</h3>
-                         <p class="product-price">Ár: 15 900 Ft</p> 
+                         <p class="product-price">Ár: 15 900 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                  <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                     <div class="img-container"><img src="https://placehold.co/400x250/fffacd/333?text=Napsugár+Csokor" alt="Virágcsokor 2 placeholder"></div>
+                      <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/fffacd/333?text=Napsugár+1" alt="Napsugár Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/eee8aa/333?text=Napsugár+2" alt="Napsugár Csokor - 2. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/f0e68c/FFF?text=Napsugár+3" alt="Napsugár Csokor - 3. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Napsugár Csokor</h3>
-                         <p class="product-price">Ár: 12 500 Ft</p> 
+                         <p class="product-price">Ár: 12 500 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                  <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="img-container"><img src="https://placehold.co/400x250/dda0dd/FFF?text=Pasztell+Harmónia" alt="Virágcsokor 3 placeholder"></div>
+                     <div class="img-container">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/dda0dd/FFF?text=Pasztell+1" alt="Pasztell Harmónia Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/d8bfd8/FFF?text=Pasztell+2" alt="Pasztell Harmónia Csokor - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Pasztell Harmónia</h3>
-                         <p class="product-price">Ár: 13 800 Ft</p> 
+                         <p class="product-price">Ár: 13 800 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                  <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/ff69b4/FFF?text=Élénk+Szenvedély" alt="Virágcsokor 4 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ff69b4/FFF?text=Szenvedély+1" alt="Élénk Szenvedély Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ff1493/FFF?text=Szenvedély+2" alt="Élénk Szenvedély Csokor - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Élénk Szenvedély</h3>
-                         <p class="product-price">Ár: 16 500 Ft</p> 
+                         <p class="product-price">Ár: 16 500 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                 <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/f5f5dc/333?text=Fehér+Elegancia" alt="Virágcsokor 5 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/f5f5dc/333?text=Elegancia+1" alt="Fehér Elegancia Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/fffafa/333?text=Elegancia+2" alt="Fehér Elegancia Csokor - 2. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/e6e6fa/333?text=Elegancia+3" alt="Fehér Elegancia Csokor - 3. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Fehér Elegancia</h3>
-                         <p class="product-price">Ár: 17 200 Ft</p> 
+                         <p class="product-price">Ár: 17 200 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                  <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/90ee90/333?text=Tavaszi+Frissesség" alt="Virágcsokor 6 placeholder"></div>
+                     <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/90ee90/333?text=Frissesség+1" alt="Tavaszi Frissesség Csokor - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/98fb98/333?text=Frissesség+2" alt="Tavaszi Frissesség Csokor - 2. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Tavaszi Frissesség</h3>
-                         <p class="product-price">Ár: 11 900 Ft</p> 
+                         <p class="product-price">Ár: 11 900 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
@@ -145,39 +322,76 @@
             <p class="section-description" data-aos="fade-up" data-aos-delay="50">Dekoráld otthonod vagy ünnepi alkalmaidat gyönyörű, kézzel készített koszorúinkkal.</p>
             <div class="product-grid">
                  <div class="product-card" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/deb887/FFF?text=Őszi+Ajtódísz" alt="Koszorú 1 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/deb887/FFF?text=Őszi+Dísz+1" alt="Őszi Ajtódísz - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/cd853f/FFF?text=Őszi+Dísz+2" alt="Őszi Ajtódísz - 2. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                     <div class="card-content">
                         <h3>Őszi Ajtódísz</h3>
-                        <p class="product-price">Ár: 10 500 Ft</p> 
+                        <p class="product-price">Ár: 10 500 Ft</p>
                         <a href="#order" class="button-small">Megnézem/Rendelés</a>
                     </div>
                 </div>
                  <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="img-container"><img src="https://placehold.co/400x250/b0c4de/333?text=Levendulás+Koszorú" alt="Koszorú 2 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/b0c4de/333?text=Levendula+1" alt="Levendulás Koszorú - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/9370db/FFF?text=Levendula+2" alt="Levendulás Koszorú - 2. nézet"></div>
+                             <div class="slide fade"><img src="https://placehold.co/400x250/e6e6fa/333?text=Levendula+3" alt="Levendulás Koszorú - 3. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                     <div class="card-content">
                         <h3>Levendulás Koszorú</h3>
-                        <p class="product-price">Ár: 9 200 Ft</p> 
+                        <p class="product-price">Ár: 9 200 Ft</p>
                         <a href="#order" class="button-small">Megnézem/Rendelés</a>
                     </div>
                 </div>
                  <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="img-container"><img src="https://placehold.co/400x250/a0522d/FFF?text=Karácsonyi+Koszorú" alt="Koszorú 3 placeholder"></div>
+                     <div class="img-container">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/a0522d/FFF?text=Karácsony+1" alt="Karácsonyi Koszorú - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/b22222/FFF?text=Karácsony+2" alt="Karácsonyi Koszorú - 2. nézet"></div>
+                             <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Karácsonyi Koszorú</h3>
-                         <p class="product-price">Ár: 14 800 Ft</p> 
+                         <p class="product-price">Ár: 14 800 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                  <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/98fb98/333?text=Tavaszi+Ébredés" alt="Koszorú 4 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/98fb98/333?text=Tavasz+1" alt="Tavaszi Ébredés Koszorú - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/90ee90/333?text=Tavasz+2" alt="Tavaszi Ébredés Koszorú - 2. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/adff2f/333?text=Tavasz+3" alt="Tavaszi Ébredés Koszorú - 3. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Tavaszi Ébredés</h3>
-                         <p class="product-price">Ár: 11 500 Ft</p> 
+                         <p class="product-price">Ár: 11 500 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
                 <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/ffdab9/333?text=Nyári+Álom" alt="Koszorú 5 placeholder"></div>
+                     <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffdab9/333?text=Nyár+1" alt="Nyári Álom Koszorú - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/ffa07a/333?text=Nyár+2" alt="Nyári Álom Koszorú - 2. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Nyári Álom</h3>
                          <p class="product-price">Ár: 10 900 Ft</p>
@@ -185,10 +399,18 @@
                      </div>
                 </div>
                 <div class="product-card initially-hidden hidden-product" data-aos="fade-up">
-                    <div class="img-container"><img src="https://placehold.co/400x250/d2b48c/FFF?text=Natúr+Varázs" alt="Koszorú 6 placeholder"></div>
+                    <div class="img-container">
+                         <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://placehold.co/400x250/d2b48c/FFF?text=Natúr+1" alt="Natúr Varázs Koszorú - 1. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/tan/FFF?text=Natúr+2" alt="Natúr Varázs Koszorú - 2. nézet"></div>
+                            <div class="slide fade"><img src="https://placehold.co/400x250/f5deb3/333?text=Natúr+3" alt="Natúr Varázs Koszorú - 3. nézet"></div>
+                            <a class="prev" onclick="plusSlides(this, -1)">❮</a>
+                            <a class="next" onclick="plusSlides(this, 1)">❯</a>
+                        </div>
+                    </div>
                      <div class="card-content">
                          <h3>Natúr Varázs</h3>
-                         <p class="product-price">Ár: 8 500 Ft</p> 
+                         <p class="product-price">Ár: 8 500 Ft</p>
                          <a href="#order" class="button-small">Megnézem/Rendelés</a>
                      </div>
                 </div>
@@ -223,7 +445,34 @@
                      <div class="form-group"> <label for="name">Név:</label> <input type="text" id="name" name="name" required placeholder="Teljes Név"> </div>
                      <div class="form-group"> <label for="email">Email cím:</label> <input type="email" id="email" name="email" required placeholder="nev@example.com"> </div>
                      <div class="form-group"> <label for="phone">Telefonszám (opcionális):</label> <input type="tel" id="phone" name="phone" placeholder="+36 30 123 4567"> </div>
-                     <div class="form-group"> <label for="product_interest">Melyik termék érdekli?</label> <select id="product_interest" name="product_interest"> <option value="">-- Kérjük válasszon --</option> <option value="Elegáns Rózsacsokor">Elegáns Rózsacsokor</option> <option value="Tavaszi Ajtókoszorú">Tavaszi Ajtókoszorú</option> <option value="Színes Mezei Csokor">Színes Mezei Csokor</option> <option value="Romantikus Álom">Romantikus Álom Csokor</option> <option value="Napsugár Csokor">Napsugár Csokor</option> <option value="Pasztell Harmónia">Pasztell Harmónia Csokor</option> <option value="Élénk Szenvedély">Élénk Szenvedély Csokor</option> <option value="Fehér Elegancia">Fehér Elegancia Csokor</option> <option value="Tavaszi Frissesség">Tavaszi Frissesség Csokor</option> <option value="Őszi Ajtódísz">Őszi Ajtódísz Koszorú</option> <option value="Levendulás Koszorú">Levendulás Koszorú</option> <option value="Karácsonyi Koszorú">Karácsonyi Koszorú</option> <option value="Tavaszi Ébredés">Tavaszi Ébredés Koszorú</option> <option value="Nyári Álom">Nyári Álom Koszorú</option> <option value="Natúr Varázs">Natúr Varázs Koszorú</option> <option value="egyedi">Egyedi kérés / Más</option> </select> </div>
+                     <div class="form-group">
+                         <label for="product_interest">Melyik termék érdekli?</label>
+                         <select id="product_interest" name="product_interest">
+                             <option value="">-- Kérjük válasszon --</option>
+                             <option value="Elegáns Rózsacsokor">Elegáns Rózsacsokor</option>
+                             <option value="Tavaszi Ajtókoszorú">Tavaszi Ajtókoszorú</option>
+                             <option value="Színes Mezei Csokor">Színes Mezei Csokor</option>
+                             <option value="Vörös Rózsa (szál)">Vörös Rózsa (szál)</option>
+                             <option value="Sárga Tulipán (szál)">Sárga Tulipán (szál)</option>
+                             <option value="Fehér Liliom (szál)">Fehér Liliom (szál)</option>
+                             <option value="Orchidea (szál)">Orchidea (szál)</option>
+                             <option value="Rózsaszín Szegfű (szál)">Rózsaszín Szegfű (szál)</option>
+                             <option value="Kék Írisz (szál)">Kék Írisz (szál)</option>
+                             <option value="Romantikus Álom">Romantikus Álom Csokor</option>
+                             <option value="Napsugár Csokor">Napsugár Csokor</option>
+                             <option value="Pasztell Harmónia">Pasztell Harmónia Csokor</option>
+                             <option value="Élénk Szenvedély">Élénk Szenvedély Csokor</option>
+                             <option value="Fehér Elegancia">Fehér Elegancia Csokor</option>
+                             <option value="Tavaszi Frissesség">Tavaszi Frissesség Csokor</option>
+                             <option value="Őszi Ajtódísz">Őszi Ajtódísz Koszorú</option>
+                             <option value="Levendulás Koszorú">Levendulás Koszorú</option>
+                             <option value="Karácsonyi Koszorú">Karácsonyi Koszorú</option>
+                             <option value="Tavaszi Ébredés">Tavaszi Ébredés Koszorú</option>
+                             <option value="Nyári Álom">Nyári Álom Koszorú</option>
+                             <option value="Natúr Varázs">Natúr Varázs Koszorú</option>
+                             <option value="egyedi">Egyedi kérés / Más</option>
+                         </select>
+                      </div>
                      <div class="form-group"> <label for="message">Üzenet, egyedi kérések, szállítási cím:</label> <textarea id="message" name="message" rows="6" required placeholder="Írd le itt a részleteket, pl. alkalom, kívánt virágok, darabszám, szállítási cím, egyéb kérdések..."></textarea> </div>
                      <div class="form-group form-submit"> <button type="submit" class="cta-button">Érdeklődés Elküldése</button> <p class="form-notice">Az űrlap elküldése a Formspree szolgáltatáson keresztül történik.</p> </div>
                  </form>
@@ -235,7 +484,7 @@
             <div class="section-divider" data-aos="zoom-in" data-aos-delay="100"></div>
             <div class="location-details" data-aos="fade-up" data-aos-delay="50">
                  <p class="shop-address"><strong>Virágvarázs Üzlet</strong><br>1051 Budapest, Virág utca 5.</p>
-                 <p class="opening-hours"><span class="hours-label">Nyitvatartás:</span><br>Hétfő - Péntek: <span class="hours-time">9:00 - 17:00</span><br>Szombat: <span class="hours-time">9:00 - 15:00</span><br>Vasárnap: <span class="hours-status">Zárva</span></p>
+                 <p class="opening-hours"><span class="hours-label">Nyitvatartás:</span><br>Hétfő - Péntek: <span class="hours-time">9:00 - 18:00</span><br>Szombat: <span class="hours-time">10:00 - 14:00</span><br>Vasárnap: <span class="hours-status">Zárva</span></p>
             </div>
             <div class="map-container" data-aos="fade-up">
                 <iframe
@@ -258,19 +507,86 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 700, once: true, offset: 80, easing: 'ease-out-cubic' });
+
+        // Slideshow Kód - Több példány kezelésére felkészítve
+        let slideshowStates = {}; // Tárolja az egyes slideshow-k állapotát
+
+        // Megjeleníti a slideshowId-hez tartozó n-edik diát
+        function showSlides(n, slideshowId) {
+            if (!slideshowStates[slideshowId]) return; // Nincs ilyen slideshow inicializálva
+
+            let state = slideshowStates[slideshowId];
+            let container = document.querySelector(`[data-slideshow-id="${slideshowId}"]`);
+            if (!container) return; // Nem található a konténer
+
+            let slides = container.getElementsByClassName("slide");
+            if (slides.length === 0) return; // Nincsenek diák a konténerben
+
+            // Index kezelése és ciklikusság
+            if (n > slides.length) { state.slideIndex = 1 }
+            else if (n < 1) { state.slideIndex = slides.length }
+            else { state.slideIndex = n; } // Normál beállítás
+
+            // Előző időzítő törlése (ha manuálisan lapozunk)
+            clearTimeout(state.timer);
+
+            // Összes slide elrejtése az adott konténerben
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // Az aktuális slide megjelenítése
+            slides[state.slideIndex - 1].style.display = "block";
+
+            // Új időzítő indítása az automatikus lapozáshoz
+            state.timer = setTimeout(() => carouselSlides(slideshowId), 5000); // 5 másodperc
+        }
+
+        // A nyilakra kattintva hívódik meg (this = a kattintott nyíl elem)
+        function plusSlides(element, n) {
+            const container = element.closest('.slideshow-container');
+            if (!container) return; // Nem található a szülő konténer
+            const slideshowId = container.dataset.slideshowId;
+            if (!slideshowId || !slideshowStates[slideshowId]) return; // Nincs ID vagy állapot
+
+            showSlides(slideshowStates[slideshowId].slideIndex + n, slideshowId);
+        }
+
+        // Az időzítő hívja meg
+        function carouselSlides(slideshowId) {
+             if (!slideshowStates[slideshowId]) return;
+             slideshowStates[slideshowId].slideIndex++; // Növeli az indexet
+             showSlides(slideshowStates[slideshowId].slideIndex, slideshowId); // Mutatja a következőt
+        }
+
+        // --- Inicializálás ---
         document.addEventListener('DOMContentLoaded', function() {
+            // Load More gombok inicializálása
             function setupToggle(buttonId, sectionId, hiddenItemSelector, showText, hideText) {
                 const button = document.getElementById(buttonId);
                 const itemsToToggle = document.querySelectorAll(`#${sectionId} ${hiddenItemSelector}`);
-                if (!button) return; if (itemsToToggle.length === 0) { button.style.display = 'none'; return; }
+                if (!button) return;
+                if (itemsToToggle.length === 0) {
+                    if (button) { button.style.display = 'none'; }
+                    return;
+                }
                 button.addEventListener('click', function() {
                     const currentState = button.dataset.state; const isHiding = currentState === 'shown';
-                    itemsToToggle.forEach((item, index) => { item.style.transitionDelay = '0ms'; if (isHiding) { item.classList.add('hidden-product'); } else { item.classList.remove('hidden-product'); } });
+                    itemsToToggle.forEach((item) => { item.style.transitionDelay = '0ms'; if (isHiding) { item.classList.add('hidden-product'); } else { item.classList.remove('hidden-product'); } });
                     button.textContent = isHiding ? showText : hideText; button.dataset.state = isHiding ? 'hidden' : 'shown';
                 });
             }
+            setupToggle('load-more-viragok', 'viragok', '.initially-hidden', 'További virágok', 'Kevesebb virág');
             setupToggle('load-more-flowers', 'flowers', '.initially-hidden', 'További csokrok', 'Kevesebb csokor');
             setupToggle('load-more-wreaths', 'wreaths', '.initially-hidden', 'További koszorúk', 'Kevesebb koszorú');
+
+            // Minden slideshow inicializálása
+            const slideshowContainers = document.querySelectorAll('.slideshow-container');
+            slideshowContainers.forEach((container, index) => {
+                const slideshowId = `slideshow-${index}`; // Egyedi ID generálása
+                container.dataset.slideshowId = slideshowId; // ID hozzáadása az elemhez
+                slideshowStates[slideshowId] = { slideIndex: 1, timer: null }; // Állapot inicializálása
+                showSlides(1, slideshowId); // Első dia megjelenítése és időzítő indítása
+            });
         });
     </script>
 
